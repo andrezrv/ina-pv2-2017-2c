@@ -1,5 +1,5 @@
 <?php
-class Tabla {
+class Table {
 	var $id;
 	var $class;
 	var $columnas;

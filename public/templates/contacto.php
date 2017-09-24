@@ -2,7 +2,9 @@
 if ( isset( $_POST ) ) {
 	var_dump( $_POST );
 }
-?>
+
+load_template( 'header' ); ?>
+
 <h1>Contacto</h1>
 
 <?php load_template( 'navigation' ); ?>
@@ -25,3 +27,5 @@ if ( isset( $_POST ) ) {
 
 	<input type="submit" name="" value="Enviar">
 </form>
+
+<?php load_template( 'footer' ); ?>
