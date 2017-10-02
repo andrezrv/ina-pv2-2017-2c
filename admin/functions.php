@@ -20,6 +20,14 @@ function load_admin_template( $name ) {
 	include dirname( __FILE__ ) . '/templates/' . $name . '.php';
 }
 
+function init_db() {
+	global $db;
+
+	if ( is_null( $db ) ) {
+		$db = new DB( DB_HOST, DB_NAME, DB_USER, DB_PASSWORD );
+	}
+}
+
 function get_people() {
 	$people = array(
 		array(

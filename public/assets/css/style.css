@@ -1,7 +1,7 @@
-nav {
-	margin: 20px;
-	border: 3px solid #dedede;
-	border-radius: 10px;
-	box-shadow: 10px 10px 5px #888888;
-	transform: rotate(7deg);
+a {
+	transition: color .4s ease 0s;
+}
+
+a:hover {
+	color: red;
 }

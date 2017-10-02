@@ -1,5 +1,9 @@
 <?php
-$people = get_people();
+global $db;
+
+$people = $db->get_results( "SELECT * FROM `usuarios`" );
+
+// $people = get_people();
 
 $rows = array();
 
@@ -11,7 +15,7 @@ foreach ( $people as $key => $value ) {
 
 $people_table = new Table(
 	'people-list',
-	array( 'Nombre', 'Apellido', 'Edad', 'Modificar', 'Eliminar' ),
+	array( 'ID', 'Username', 'Nombre', 'Email', 'Password', 'Modificar', 'Eliminar' ),
 	$rows,
 	'list-table'
 );
