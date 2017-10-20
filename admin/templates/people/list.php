@@ -1,15 +1,15 @@
 <?php
 global $db;
 
-$people = $db->get_results( "SELECT * FROM `usuarios`" );
-
-// $people = get_people();
+$people = $db->get_from( 'usuarios' );
 
 $rows = array();
 
 foreach ( $people as $key => $value ) {
 	$rows[ $key ] = $value;
+
 	$rows[ $key ]['edit']   = '<a href="admin.php?page=people/update&id=' . $key . '">Modificar</a>';
+
 	$rows[ $key ]['remove'] = '<a href="admin.php?page=people/remove&id=' . $key . '">Eliminar</a>';
 }
 

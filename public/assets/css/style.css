@@ -1,7 +1,28 @@
-a {
-	transition: color .4s ease 0s;
+* {
+	box-sizing: border-box;
 }
 
-a:hover {
-	color: red;
+img {
+	max-width: 100%;
+}
+
+.box {
+	width: 25%;
+	font-size: 48px;
+	text-align: center;
+	float: left;
+	border: 2px solid red;
+	padding: 10px;
+}
+
+@media all and (max-width: 1023px) {
+	.box {
+		width: 50%;
+	}
+}
+
+@media all and (max-width: 639px) {
+	.box {
+		width: 100%;
+	}
 }
