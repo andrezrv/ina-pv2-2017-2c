@@ -1,0 +1,31 @@
+* {
+	box-sizing: border-box;
+}
+
+.box-container {
+	overflow: auto;
+}
+
+.box {
+	text-align: center;
+	font-size: 18px;
+	width: 25%;
+	padding: 30px;
+	float: left;
+	border: 3px solid #000;
+	cursor: pointer;
+	transition: all .4s ease 0s;
+	margin-top: 0;
+}
+
+.red-bg {
+	background-color: #f00;
+	color: #fff;
+	margin-top: 10px;
+}
+
+.yellow-bg {
+	background-color: #ff0;
+	color: #000;
+	margin-top: 10px;
+}

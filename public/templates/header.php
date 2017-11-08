@@ -6,3 +6,6 @@
 		<title>Mi sitio web</title>
 	</head>
 	<body>
+		<header id="site-header">
+			<h1>Mi sitio web</h1>
+		</header>

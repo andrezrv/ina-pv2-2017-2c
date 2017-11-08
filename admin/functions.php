@@ -54,3 +54,15 @@ function get_people() {
 
 	return $people;
 }
+
+function validate_user_maybe() {
+	User::validate();
+}
+
+function logout_user_maybe() {
+	User::logout();
+}
+
+function user_is_logged_in() {
+	return User::is_logged_in();
+}

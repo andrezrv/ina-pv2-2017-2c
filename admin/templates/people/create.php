@@ -2,6 +2,10 @@
 if ( ! empty( $_POST ) ) {
 	global $db;
 
+	if ( ! empty( $_POST['password'] ) ) {
+		$_POST['password'] = md5( $_POST['password'] );
+	}
+
 	if ( $db->insert( 'usuarios', $_POST ) ) {
 		echo 'Se insertó correctamente el usuario ' . $_POST['username'];
 	}
